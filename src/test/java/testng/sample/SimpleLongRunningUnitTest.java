@@ -1,6 +1,6 @@
 package testng.sample;
 
-import org.testng.Assert;
+import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
 public class SimpleLongRunningUnitTest {
@@ -9,7 +9,7 @@ public class SimpleLongRunningUnitTest {
 
 	@Test
 	public void givenNumber_whenEven_thenTrue() {
-		Assert.assertEquals(number % 2 == 0, true);
+		assertEquals(number % 2 == 0, true);
 	}
 
 }
