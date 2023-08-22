@@ -5,11 +5,11 @@ import org.testng.annotations.Test;
 
 public class SimpleLongRunningUnitTest {
 
-	private int number = 12;
+	private int number = 16;
 
 	@Test
 	public void givenNumber_whenEven_thenTrue() {
-		assertEquals(number % 3 == 0, true);
+		assertEquals(number % 4 == 0, true);
 	}
 
 }
